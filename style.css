@@ -1,0 +1,200 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    color: #333333;
+}
+
+/* HOME Section - Image Version */
+.imgContain {
+    padding-top: 66px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    background-color: #f4f4f4; /* Optional: Add a background color */
+}
+
+.imgWrapper {
+    width: 100%;
+    max-width: 400px; /* Limit the image width */
+    margin: auto;
+    padding: 20px; /* Add padding around the image */
+}
+
+#ceoImage {
+    width: 100%;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+}
+
+/* Hide imagetxt on smaller screens */
+@media (max-width: 600px) {
+    .imgWrapper {
+        max-width: 300px; /* Reduce size on smaller screens */
+    }
+    #imagetxt {
+        display: none; /* Hide content when screen is <= 600px */
+    }
+}
+
+#imagetxt {
+    padding-left: 1000px; /* Adjust as necessary */
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background: transparent;
+    color: white;
+    opacity: 0.8;
+}
+
+/* General Container */
+.container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-right: 120px;
+    padding-left: 120px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font: 400 16px/1.8 'Lato', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    background-color: white;
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.navbar-nav li a:hover {
+    color: firebrick !important; /* Set color for hover effect */
+}
+
+/* Navbar links (default color) */
+.navbar-nav li a {
+    color: #333333 !important; /* Set a default color for the text (dark grey) */
+}
+
+/* Navbar brand/logo */
+.navbar-brand {
+    color: #333333 !important; /* Set the color for the brand/logo text */
+}
+
+/* Navbar button (for mobile view) */
+.navbar-toggler {
+    border-color: transparent;
+    background-color: #EAAA3E; /* Button background color */
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #f5f5f5;
+    padding: 32px;
+    text-align: center;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: firebrick;
+    text-decoration: none;
+}
+
+/* QR Code Styles */
+.qrWrapper {
+    text-align: center;
+    margin-top: 20px; /* Add some space above the QR code */
+}
+
+.qrWrapper img {
+    width: 150px; /* Adjust the size of the QR code */
+    height: 150px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Contact and Social Media Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Space between icons */
+    font-size: 24px; /* Adjust icon size */
+    padding-top: 10px; /* Add padding from title */
+}
+
+.contact-icons a {
+    color: #333333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.contact-icons a:hover {
+    color: firebrick; /* Change to this color on hover */
+}
+
+/* Change color of icons on hover */
+.contact-icons a:hover i {
+    color: firebrick; /* Change this to your desired color */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Smooth hover effect for links */
+a:hover {
+    color: firebrick;
+    transition: color 0.3s ease;
+}
+
+/* Home Section Text */
+#home h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2F595D;
+}
+
+#home p {
+    font-size: 30px;
+    color: #EDC474;
+}
+
+/* Text Adjustments for Mobile */
+@media (max-width: 600px) {
+    #home h1 {
+        font-size: 36px;
+    }
+    #home p {
+        font-size: 18px;
+    }
+}
+
+/* Contacts Links */
+#contacts a {
+    color: #333333; /* Default text color */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+#contacts a:hover {
+    color: firebrick !important; /* Change to this color on hover */
+}
